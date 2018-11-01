@@ -10,4 +10,5 @@
 2. Start **Kafka** server using **bin/kafka-server-start.sh config/server.properties**.
 3. Create Kafka topic using **bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic            kafka_dribble_topic**.
 4. Start the server to listen to **kafka_dribble_topic**.
+5. Incoming request are processed and recorded in the db.
 
