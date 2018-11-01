@@ -25,6 +25,7 @@ public class Job implements Serializable{
     @GeneratedValue(strategy= GenerationType.SEQUENCE, generator="SEQ_JOB")
     private Integer jobId;
     @NotNull
+    @Column(unique = true)
     private String jobTitle;
     @NotNull
     private String jobType;

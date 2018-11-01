@@ -3,7 +3,6 @@ package com.prs.dribblekafkaconsumer.dto;
 import java.io.Serializable;
 import java.util.Set;
 import javax.persistence.CascadeType;
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -19,10 +18,8 @@ public class Company implements Serializable{
     @Id
     @SequenceGenerator(name="SEQ_COMPANY", sequenceName="SEQ_GEN_COMPANY", allocationSize=1)
     @GeneratedValue(strategy= GenerationType.SEQUENCE, generator="SEQ_COMPANY")
-    @Column(unique = true)
     private Integer companyId;
     @NotNull
-    @Column(unique = true)
     private String companyName;
     @NotNull
     private String description;
