@@ -3,6 +3,7 @@
   **Steps to follow**
   
   **Create DB tables**
+  
   Create tables using the script available under resource folder(resources/templates/createTableScripts.txt).
   
 1. Start **Zookeeper** using **bin/zookeeper-server-start.sh config/zookeeper.properties**.
